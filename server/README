@@ -1,0 +1,32 @@
+Open terminal 1:
+
+    - cd frontend
+    - npm run dev
+    - NOTE: If having issues, try running "npm install" then "npm run dev"
+
+Open terminal 2:
+
+    - cd server
+    - node --env-file=.env index.js
+
+To run the server, you need to have XAMPP installed (https://www.apachefriends.org/)
+Once installed and when you are in the controll panel, start "Apache" and "MySQL".
+Then, select "Admin" under "MySQL" and that should bring up the localhost phpMyAdmin.
+
+You then need to make a database. For database name, do "authentication".
+
+ - New
+ - Database name should be "authentication". Then click create.
+ - Table name should be "users". Then click create.
+ - For table creation
+    -     Name         Type         Length              A_I
+        - id           int                           "Select it"
+        - email        VARCHAR        30
+        - username     VARCHAR        40
+        - password     VARCHAR       150
+
+ - Save
+
+At the moment, the server is used for login and register. First try and make a fake account through register, and refresh phpMyAdmin to see if info was uploaded. If it did, try to login using same information.
+
+It should work now. Message if anything is broken.
